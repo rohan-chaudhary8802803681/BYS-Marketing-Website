@@ -436,7 +436,7 @@ export default function Home() {
                                 <div className="relative z-10">
                                     <div className="flex items-center gap-4 mb-8">
                                         <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-white/50">
-                                            <img src="https://i.pravatar.cc/150?img=11" alt="Client CEO" className="w-full h-full object-cover" />
+                                            <img loading="lazy" width="64" height="64" src="https://i.pravatar.cc/150?img=11" alt="Client CEO" className="w-full h-full object-cover" />
                                         </div>
                                         <div>
                                             <h4 className="font-bold text-xl">Michael Carter</h4>
@@ -589,7 +589,7 @@ export default function Home() {
                             {/* 1. Focus Project (Big Left) */}
                             <ScrollReveal delay={0.1} className="lg:col-span-8 lg:row-span-2 h-[450px] sm:h-[550px] lg:h-full">
                                 <Link to="/portfolio" className="relative block h-full w-full rounded-[2.5rem] overflow-hidden group border border-white/60 dark:border-white/10 shadow-lg dark:shadow-none hover:shadow-floating transition-all bg-gray-900">
-                                    <img alt={featuredWorks[0].title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-105" src={featuredWorks[0].img} />
+                                    <img loading="lazy" alt={featuredWorks[0].title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-105" src={featuredWorks[0].img} />
                                     <div className="absolute inset-x-0 bottom-0 h-3/4 bg-gradient-to-t from-black/95 via-black/50 to-transparent transition-opacity duration-700"></div>
                                     <div className="absolute inset-0 bg-primary/20 mix-blend-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
@@ -612,7 +612,7 @@ export default function Home() {
                             {/* 2. Secondary Project (Top Right) */}
                             <ScrollReveal delay={0.2} className="lg:col-span-4 lg:row-span-1 h-[350px] md:h-[400px] lg:h-full">
                                 <Link to="/portfolio" className="relative block h-full w-full rounded-[2.5rem] overflow-hidden group border border-white/60 dark:border-white/10 shadow-md dark:shadow-none hover:shadow-floating transition-all bg-gray-900">
-                                    <img alt={featuredWorks[1].title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-110" src={featuredWorks[1].img} />
+                                    <img loading="lazy" alt={featuredWorks[1].title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-110" src={featuredWorks[1].img} />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                                     <div className="absolute inset-0 bg-primary/10 mix-blend-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
@@ -632,7 +632,7 @@ export default function Home() {
                             {/* 3. Tertiary Project (Bottom Right) */}
                             <ScrollReveal delay={0.3} className="lg:col-span-4 lg:row-span-1 h-[350px] md:h-[400px] lg:h-full">
                                 <Link to="/portfolio" className="relative block h-full w-full rounded-[2.5rem] overflow-hidden group border border-white/60 dark:border-white/10 shadow-md dark:shadow-none hover:shadow-floating transition-all bg-gray-900">
-                                    <img alt={featuredWorks[2].title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-110" src={featuredWorks[2].img} />
+                                    <img loading="lazy" alt={featuredWorks[2].title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-110" src={featuredWorks[2].img} />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                                     <div className="absolute inset-0 bg-purple-500/10 mix-blend-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
