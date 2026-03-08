@@ -39,7 +39,7 @@ export default function PortfolioHub() {
             <section className="w-full">
                 <div className="relative rounded-[2rem] overflow-hidden h-[60vh] md:h-[70vh] shadow-2xl shadow-gray-200 dark:shadow-none group border border-transparent dark:border-white/10 transition-colors">
                     <div className="absolute inset-0 bg-black/20 z-10 transition-opacity group-hover:bg-black/10"></div>
-                    <img alt="Featured Project Background" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPe4YhrdW2-h1gznSgqq5D3gz2gzDuHLNRld96_LPjgZz_mCiz3Mn8e_d4Pr-bGYCtOYenYPpafhmvEbE6LUaUhORQYIoMoNKbu4nnPdEoGYnSYcmfPmQfOB9JfZkK5PLXwmKnIuLySiNkOqQOeESyAschPeM5MBsySFtxF-5H5xEst-sDBExH7eIMwFrP5nMSixv0WCtsQlbZdF0X0RVs_GxdUztSID03aKY6nZQhhOtjmbWF1NoxVeHGdhdy8dXLokyd2R4bHkY" />
+                    <img alt="Featured Project Background" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/portfolio/mashupminati.png" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-20"></div>
 
                     <div className="absolute top-8 right-8 z-30">
@@ -51,21 +51,21 @@ export default function PortfolioHub() {
 
                     <div className="absolute bottom-0 left-0 w-full p-8 md:p-12 z-30 flex flex-col md:flex-row items-end justify-between gap-6">
                         <div className="max-w-xl">
-                            <h3 className="text-3xl md:text-5xl font-bold text-white mb-2">Apex Fintech Rebrand</h3>
-                            <p className="text-gray-300 text-lg mb-6">Complete digital transformation for a leading trading platform.</p>
+                            <h3 className="text-3xl md:text-5xl font-bold text-white mb-2">Mashup Minati Pro</h3>
+                            <p className="text-gray-300 text-lg mb-6">India's premier high-energy event aggregator platform.</p>
                             <div className="flex gap-3">
-                                <span className="px-3 py-1 bg-white/10 dark:bg-black/30 backdrop-blur-md border border-white/20 dark:border-white/10 rounded-lg text-white text-xs font-medium transition-colors">UX/UI Design</span>
+                                <span className="px-3 py-1 bg-white/10 dark:bg-black/30 backdrop-blur-md border border-white/20 dark:border-white/10 rounded-lg text-white text-xs font-medium transition-colors">Entertainment</span>
                                 <span className="px-3 py-1 bg-white/10 dark:bg-black/30 backdrop-blur-md border border-white/20 dark:border-white/10 rounded-lg text-white text-xs font-medium transition-colors">Web Development</span>
                             </div>
                         </div>
                         <div className="flex gap-4">
                             <div className="glass-panel p-4 rounded-2xl min-w-[120px] text-center border-white/20 dark:border-white/10 bg-white/10 dark:bg-black/40 backdrop-blur-xl transition-colors">
-                                <p className="text-3xl font-black text-white">+300%</p>
-                                <p className="text-xs text-gray-200 uppercase tracking-wider font-bold mt-1">Conversion</p>
+                                <p className="text-3xl font-black text-white">Scale</p>
+                                <p className="text-xs text-gray-200 uppercase tracking-wider font-bold mt-1">Pan India</p>
                             </div>
                             <div className="glass-panel p-4 rounded-2xl min-w-[120px] text-center border-white/20 dark:border-white/10 bg-white/10 dark:bg-black/40 backdrop-blur-xl transition-colors">
-                                <p className="text-3xl font-black text-white">2.5M</p>
-                                <p className="text-xs text-gray-200 uppercase tracking-wider font-bold mt-1">Active Users</p>
+                                <p className="text-3xl font-black text-white">Event</p>
+                                <p className="text-xs text-gray-200 uppercase tracking-wider font-bold mt-1">Aggregator</p>
                             </div>
                         </div>
                     </div>

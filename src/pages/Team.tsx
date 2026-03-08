@@ -34,32 +34,70 @@ const departments = [
 ];
 
 const teamMembers: TeamMember[] = [
-    // Engineering
-    { name: 'Priya Nair', role: 'CTO & Lead Engineer', dept: 'engineering', img: 'https://i.pravatar.cc/300?img=47', bio: 'Performance obsessive. If your site doesn\'t score 99+ on Lighthouse, she won\'t sleep until it does. Ex-FAANG engineer turned startup builder.', skills: ['React', 'Node.js', 'System Design'] },
-    { name: 'Vikram Patel', role: 'Senior Full-Stack Developer', dept: 'engineering', img: 'https://i.pravatar.cc/300?img=53', bio: 'Builds production-grade apps that handle millions of users. TypeScript evangelist and open-source contributor.', skills: ['TypeScript', 'Next.js', 'PostgreSQL'] },
-    { name: 'Elena Santos', role: 'Frontend Architect', dept: 'engineering', img: 'https://i.pravatar.cc/300?img=44', bio: 'Crafts pixel-perfect, butter-smooth UIs that users love. Animation wizard and accessibility champion.', skills: ['React', 'Framer Motion', 'Tailwind'] },
-    { name: 'Rahul Mehta', role: 'DevOps Engineer', dept: 'engineering', img: 'https://i.pravatar.cc/300?img=59', bio: 'Keeps the infrastructure humming. Zero downtime deployments are his love language.', skills: ['AWS', 'Docker', 'CI/CD'] },
-
-    // Design
-    { name: 'Aanya Kapoor', role: 'Head of Design', dept: 'design', img: 'https://i.pravatar.cc/300?img=45', bio: 'Designs experiences that convert. 6+ years turning complex problems into elegant, intuitive interfaces.', skills: ['UI/UX', 'Design Systems', 'Figma'] },
-    { name: 'Daniel Kim', role: 'Motion Designer', dept: 'design', img: 'https://i.pravatar.cc/300?img=51', bio: 'Brings static designs to life with cinema-quality motion. Every micro-interaction tells a story.', skills: ['After Effects', 'Lottie', 'Rive'] },
-    { name: 'Sophie Chen', role: 'Brand Designer', dept: 'design', img: 'https://i.pravatar.cc/300?img=32', bio: 'Creates brand identities that competitors wish they had. Color theory geek and typography obsessive.', skills: ['Branding', 'Typography', 'Illustrator'] },
-
-    // Marketing
-    { name: 'Arjun Sharma', role: 'CEO & Growth Strategist', dept: 'marketing', img: 'https://i.pravatar.cc/300?img=68', bio: 'Bootstrapped his first agency at 22. Now runs campaigns that generate $500K+ monthly for clients.', skills: ['Growth', 'Paid Ads', 'Strategy'] },
-    { name: 'Maya Rodriguez', role: 'SEO Lead', dept: 'marketing', img: 'https://i.pravatar.cc/300?img=26', bio: 'Turns websites into traffic magnets. Has ranked 200+ keywords on page one across competitive niches.', skills: ['Technical SEO', 'Content', 'Link Building'] },
-    { name: 'Karan Singh', role: 'Paid Media Specialist', dept: 'marketing', img: 'https://i.pravatar.cc/300?img=61', bio: 'Manages $2M+ in annual ad spend. Consistently delivers 5-8x ROAS across Meta, Google, and TikTok.', skills: ['Google Ads', 'Meta Ads', 'Analytics'] },
-
-    // Analytics
-    { name: 'Dr. Neha Joshi', role: 'Head of Data & Analytics', dept: 'analytics', img: 'https://i.pravatar.cc/300?img=36', bio: 'Former data scientist at a Fortune 500. Turns raw data into actionable growth strategies.', skills: ['Python', 'BigQuery', 'Looker'] },
-    { name: 'Alex Turner', role: 'CRO Specialist', dept: 'analytics', img: 'https://i.pravatar.cc/300?img=14', bio: 'A/B testing addict. Has improved conversion rates by 40-300% for e-commerce clients.', skills: ['A/B Testing', 'Heatmaps', 'UX Research'] },
-
-    // Media
-    { name: 'Rohan Verma', role: 'CMO & Creative Director', dept: 'media', img: 'https://i.pravatar.cc/300?img=12', bio: 'Storyteller at heart. Creates campaigns that make people feel something — then buy something.', skills: ['Video', 'Copywriting', 'Psychology'] },
-    { name: 'Anisa Patel', role: 'Video Producer', dept: 'media', img: 'https://i.pravatar.cc/300?img=25', bio: 'From concept to final cut, creates brand films and social content that stops the scroll.', skills: ['Premiere Pro', 'DaVinci', 'Scripting'] },
-
-    // Security
-    { name: 'Omar Hassan', role: 'Security Lead', dept: 'security', img: 'https://i.pravatar.cc/300?img=52', bio: 'Ethical hacker turned security architect. Protects client infrastructure with military-grade protocols.', skills: ['Pen Testing', 'ISO 27001', 'WAF'] },
+    {
+        name: 'Rohan Kumar Chaudhary',
+        role: 'Founder & CEO',
+        dept: 'marketing',
+        img: 'https://bys.marketing/wp-content/uploads/2025/11/my-image-e1763896540734.jpeg',
+        bio: '8 Years of Active Experience. Inspired by visual storytelling, tech advancements, AI, and the psychology of human buying interests.',
+        skills: ['Growth Strategy', 'Brand Architecture', 'Leadership']
+    },
+    {
+        name: 'Rupesh Jha',
+        role: 'Senior Dev.',
+        dept: 'engineering',
+        img: 'https://bys.marketing/wp-content/uploads/2025/09/about-img-300x300.jpg',
+        bio: 'Driven by the belief that great design & tech advancements are about creating meaningful connections between brands and their audiences.',
+        skills: ['Engineering', 'Web Perf', 'Architecture']
+    },
+    {
+        name: 'Abhishek Singh',
+        role: 'Junior Dev & Automations',
+        dept: 'engineering',
+        img: 'https://bys.marketing/wp-content/uploads/2025/09/abhishek-300x300.jpeg',
+        bio: 'We embrace new technologies, stay ahead of industry trends, and expand our skill sets to remain ready for industry disruption.',
+        skills: ['Automations', 'Full Stack', 'AI']
+    },
+    {
+        name: 'Jenny Wilson',
+        role: 'Global Client Manager',
+        dept: 'marketing',
+        img: 'https://bys.marketing/wp-content/uploads/2025/09/Docker-team-3-300x300.webp',
+        bio: 'Overseeing business operations from outside India, handling and managing success for our US and UK based clients with total transparency.',
+        skills: ['US/UK Markets', 'Client Success', 'Global Strategy']
+    },
+    {
+        name: 'Joining Soon',
+        role: 'Lead UI/UX Designer',
+        dept: 'design',
+        img: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=400',
+        bio: 'We are expanding our design team to create world-class digital experiences. This seat is reserved for a visionary designer.',
+        skills: ['Figma', 'Prototyping', 'Visual Design']
+    },
+    {
+        name: 'Joining Soon',
+        role: 'Creative Director',
+        dept: 'media',
+        img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=400',
+        bio: 'Seeking a creative powerhouse to lead our media and content production efforts on a global scale.',
+        skills: ['Video', 'Storytelling', 'Creative Direction']
+    },
+    {
+        name: 'Joining Soon',
+        role: 'Performance Marketer',
+        dept: 'marketing',
+        img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400',
+        bio: 'Expanding our growth team. Looking for a data-driven marketer to scale global campaigns.',
+        skills: ['Ads', 'ROAS', 'Scaling']
+    },
+    {
+        name: 'Joining Soon',
+        role: 'Security Architect',
+        dept: 'security',
+        img: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=400',
+        bio: 'Protecting our clients infrastructure with military-grade protocols. Join our elite security squad.',
+        skills: ['Pen Testing', 'Cloud Security', 'Compliance']
+    }
 ];
 
 const cultureValues = [
@@ -82,7 +120,7 @@ const deptStats = [
 
 const openPositions = [
     { title: 'Senior React Engineer', dept: 'Engineering', type: 'Remote', icon: MonitorSmartphone },
-    { title: 'Product Designer', dept: 'Design', type: 'Hybrid (Bangalore)', icon: PenTool },
+    { title: 'Product Designer', dept: 'Design', type: 'Hybrid (New Delhi)', icon: PenTool },
     { title: 'SEO Strategist', dept: 'Marketing', type: 'Remote', icon: Search },
     { title: 'Performance Marketing Manager', dept: 'Marketing', type: 'Remote', icon: BarChart3 },
 ];
@@ -187,16 +225,25 @@ export default function Team() {
                                     style={{ animationDelay: `${i * 50}ms` }}
                                 >
                                     {/* Photo */}
-                                    <div className="relative h-52 overflow-hidden bg-gradient-to-br from-primary/10 to-purple-900/20">
-                                        <img
-                                            src={member.img}
-                                            alt={member.name}
-                                            className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                                            loading="lazy"
-                                        />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                                    <div className="relative flex flex-col items-center pt-8 pb-4">
+                                        <div className="w-40 h-40 relative group-hover:scale-105 transition-transform duration-500">
+                                            {/* Creative Organic Shape Backdrop */}
+                                            <div className="absolute inset-0 bg-primary/20 dark:bg-primary/40 rounded-[2.5rem] rotate-6 group-hover:rotate-12 transition-transform duration-500" />
+                                            <div className="absolute inset-0 bg-gray-200 dark:bg-white/10 rounded-[2.5rem] -rotate-3 group-hover:-rotate-6 transition-transform duration-500" />
+
+                                            {/* Masked Image Container */}
+                                            <div className="relative w-full h-full rounded-[2.5rem] overflow-hidden border-2 border-white dark:border-[#1a1a1a] shadow-lg">
+                                                <img
+                                                    src={member.img}
+                                                    alt={member.name}
+                                                    className="w-full h-full object-cover object-top filter group-hover:brightness-110 transition-all"
+                                                    loading="lazy"
+                                                />
+                                                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
+                                            </div>
+                                        </div>
                                         {/* Dept tag */}
-                                        <span className="absolute top-3 right-3 text-[9px] font-black uppercase tracking-wider px-2.5 py-1 rounded-full bg-black/40 backdrop-blur-sm text-white/80 border border-white/10">
+                                        <span className="mt-4 text-[9px] font-black uppercase tracking-wider px-2.5 py-1 rounded-full bg-primary/10 dark:bg-primary/20 text-primary border border-primary/20">
                                             {member.dept}
                                         </span>
                                     </div>
@@ -297,7 +344,7 @@ export default function Team() {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                         {[
-                            { city: 'Bangalore', country: 'India', role: 'HQ & Engineering Hub', tz: 'IST  (UTC+5:30)' },
+                            { city: 'New Delhi', country: 'India', role: 'HQ & Engineering Hub', tz: 'IST  (UTC+5:30)' },
                             { city: 'Dubai', country: 'UAE', role: 'Media & Client Relations', tz: 'GST  (UTC+4)' },
                             { city: 'Remote', country: 'Worldwide', role: 'Distributed Team Members', tz: 'All Time Zones' },
                         ].map((loc, i) => (

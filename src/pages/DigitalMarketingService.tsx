@@ -88,27 +88,27 @@ export default function DigitalMarketingService() {
                         <div className="flex overflow-x-auto gap-4 pb-4 snap-x hide-scrollbar -mx-6 px-6 md:mx-0 md:px-0">
                             {/* Card 1 */}
                             <div className="snap-center shrink-0 w-[280px] md:w-[320px] h-[320px] rounded-[2rem] relative overflow-hidden group shadow-xl shadow-gray-200 dark:shadow-none border border-transparent dark:border-white/5 cursor-pointer">
-                                <img alt="B2B client growth dashboard" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpY08jC8pG8iLPE0D-927A3_1G012G7vH2f6tU2fO3c0W8o1W8H4920uO36Z8H4l5c85sQkK8P2u0rA8wZ09xW93gX306W7m34U2eG4tF10J25V2A27O6P7r6gL2_W9yG_GqD-00u1wG_T2zW2S_J05o2UqDqZ3uL0E_gR4YyE0H-Hn-z0_n9s8F5M9b9A1m23N-3U7tO" />
+                                <img alt="Design Furniture Catalog" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="/portfolio/df.png" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6">
                                     <div className="flex gap-2 mb-2">
-                                        <span className="text-[10px] font-bold text-white bg-primary backdrop-blur-md px-2 py-1 rounded-md shadow-lg">240% Lift</span>
-                                        <span className="text-[10px] font-bold text-black bg-white backdrop-blur-md px-2 py-1 rounded-md shadow-lg">SaaS</span>
+                                        <span className="text-[10px] font-bold text-white bg-primary backdrop-blur-md px-2 py-1 rounded-md shadow-lg">B2B/B2C</span>
+                                        <span className="text-[10px] font-bold text-black bg-white backdrop-blur-md px-2 py-1 rounded-md shadow-lg">Interior Design</span>
                                     </div>
-                                    <h4 className="text-xl font-bold text-white mb-1">TechFlow Systems</h4>
-                                    <p className="text-xs text-gray-300">Optimized funnel architecture resulting in record quarterly growth.</p>
+                                    <h4 className="text-xl font-bold text-white mb-1">Design Furniture (DF)</h4>
+                                    <p className="text-xs text-gray-300">Premium metal fabrication cataloging over 500+ products for architects.</p>
                                 </div>
                             </div>
 
                             {/* Card 2 */}
                             <div className="snap-center shrink-0 w-[280px] md:w-[320px] h-[320px] rounded-[2rem] relative overflow-hidden group shadow-xl shadow-gray-200 dark:shadow-none border border-transparent dark:border-white/5 cursor-pointer">
-                                <img alt="Social media engagement metrics" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg92XdH-Dqy4z47c10P8CgacCvZ2QHkQQ03tcvr-cf_nCZL4DWz931xQbG1mzvItUC3S52EYCINx1T88lN3ESH5dyh7tO1Sx0OGiW6PmE5eoAWaOJxqJ9PsqEZNPhWNfK5Eb9USAUHh-D8lhWxpw8xt1UCbM4Q1pFF7UbU3EjUSd_cPm3IJO0e0-muuLgPbasHU2eLZUkLKLqxdabhtm0FnCTqz_qh3e0lzxDZX5OFxiLDVaSsHGxbu1f8EKAYj_CyLIwtRcuvG-E" />
+                                <img alt="TM Production Portfolio" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="/portfolio/tmproduction.png" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-6">
                                     <div className="flex gap-2 mb-2">
-                                        <span className="text-[10px] font-bold text-white bg-primary backdrop-blur-md px-2 py-1 rounded-md shadow-lg">12x ROAS</span>
-                                        <span className="text-[10px] font-bold text-black bg-white backdrop-blur-md px-2 py-1 rounded-md shadow-lg">E-Commerce</span>
+                                        <span className="text-[10px] font-bold text-white bg-primary backdrop-blur-md px-2 py-1 rounded-md shadow-lg">High-End</span>
+                                        <span className="text-[10px] font-bold text-black bg-white backdrop-blur-md px-2 py-1 rounded-md shadow-lg">Media</span>
                                     </div>
-                                    <h4 className="text-xl font-bold text-white mb-1">Urban Threads</h4>
-                                    <p className="text-xs text-gray-300">Viral TikTok campaign integration with retargeting flows.</p>
+                                    <h4 className="text-xl font-bold text-white mb-1">TM Production</h4>
+                                    <p className="text-xs text-gray-300">Award-winning media production house showcasing high-end cinematography.</p>
                                 </div>
                             </div>
                         </div>
@@ -166,7 +166,7 @@ export default function DigitalMarketingService() {
                 </div>
 
                 {/* Desktop Sticky Sidebar Column */}
-                <DesktopSidebar serviceName="Digital Marketing" expertName="Michael Chen" expertRole="VP of Performance Marketing" />
+                <DesktopSidebar serviceName="Digital Marketing" />
 
             </div>
             {/* --- END DESKTOP 2-COLUMN LAYOUT --- */}
@@ -192,14 +192,14 @@ export default function DigitalMarketingService() {
                     <p className="text-text-sub dark:text-text-sub-dark text-sm mb-6 max-w-xs mx-auto transition-colors">Get a free audit of your current digital strategy.</p>
                     <StarBorder as="button" className="w-full" color="rgba(104,54,244,0.6)" speed="4s">
                         <span className="flex items-center justify-center gap-2">
-                        Schedule Strategy Call
-                    </span>
+                            Schedule Strategy Call
+                        </span>
                     </StarBorder>
                 </div>
             </section>
 
-        
+
             <ServiceCrossLinks currentService="Digital Marketing" />
-        </main>
+        </main >
     );
 }

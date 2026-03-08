@@ -42,7 +42,7 @@ export default function Contact() {
             <section className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <ScrollReveal>
                     <a
-                        href="https://wa.me/+919876543210?text=Hi%2C%20I%20found%20you%20on%20your%20website%20and%20want%20to%20discuss%20a%20project"
+                        href="https://wa.me/+918383894893?text=Hi%2C%20I%20found%20you%20on%20your%20website%20and%20want%20to%20discuss%20a%20project"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-4 p-5 rounded-2xl bg-[#25D366]/10 border border-[#25D366]/30 hover:bg-[#25D366]/20 transition-all group"
@@ -68,13 +68,13 @@ export default function Contact() {
                     </a>
                 </ScrollReveal>
                 <ScrollReveal delay={0.2}>
-                    <a href="tel:+919876543210" className="flex items-center gap-4 p-5 rounded-2xl bg-white dark:bg-[#1a1a1a] border border-gray-100 dark:border-white/10 hover:border-primary/30 transition-all group">
+                    <a href="tel:+918383894893" className="flex items-center gap-4 p-5 rounded-2xl bg-white dark:bg-[#1a1a1a] border border-gray-100 dark:border-white/10 hover:border-primary/30 transition-all group">
                         <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
                             <Phone size={22} />
                         </div>
                         <div>
                             <h4 className="font-bold text-text-main dark:text-white text-sm">Call Us</h4>
-                            <p className="text-xs text-text-sub dark:text-text-sub-dark">+91 98765 43210</p>
+                            <p className="text-xs text-text-sub dark:text-text-sub-dark">+91 838 389 4893</p>
                         </div>
                     </a>
                 </ScrollReveal>
@@ -100,7 +100,7 @@ export default function Contact() {
                             <div className="grid md:grid-cols-2 gap-5">
                                 <div className="flex flex-col gap-2">
                                     <label className="text-xs font-bold text-text-main dark:text-text-main-dark uppercase tracking-wider ml-1 transition-colors" htmlFor="phone">Phone (optional)</label>
-                                    <input className="w-full rounded-xl px-4 py-3.5 text-sm text-black dark:text-white bg-surface-light dark:bg-black/40 border-transparent focus:border-primary focus:ring-2 focus:ring-primary/20 shadow-inner dark:shadow-none placeholder-gray-400 dark:placeholder-gray-500 transition-all outline-none" id="phone" placeholder="+91 98765 43210" type="tel" />
+                                    <input className="w-full rounded-xl px-4 py-3.5 text-sm text-black dark:text-white bg-surface-light dark:bg-black/40 border-transparent focus:border-primary focus:ring-2 focus:ring-primary/20 shadow-inner dark:shadow-none placeholder-gray-400 dark:placeholder-gray-500 transition-all outline-none" id="phone" placeholder="+91 838 389 4893" type="tel" />
                                 </div>
                                 <div className="flex flex-col gap-2">
                                     <label className="text-xs font-bold text-text-main dark:text-text-main-dark uppercase tracking-wider ml-1 transition-colors" htmlFor="budget">Estimated Budget</label>

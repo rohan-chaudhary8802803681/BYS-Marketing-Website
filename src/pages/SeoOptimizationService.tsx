@@ -40,9 +40,9 @@ export default function SeoOptimizationService() {
             <main className="flex flex-col gap-12 lg:gap-20 px-6 pt-8 lg:px-12 max-w-[1440px] mx-auto w-full pb-40">
                 <section className="relative mt-4">
                     <div className="glass-panel rounded-3xl p-8 relative overflow-hidden group shadow-floating border-white/60 dark:border-white/10 dark:bg-black/40">
-                    <div className="absolute inset-0 z-0 opacity-80">
-                        <Waves lineColor="rgba(104, 54, 244, 0.15)" backgroundColor="transparent" waveSpeedX={0.02} waveSpeedY={0.01} waveAmpX={30} waveAmpY={20} friction={0.9} tension={0.01} maxCursorMove={80} xGap={15} yGap={15} />
-                    </div>
+                        <div className="absolute inset-0 z-0 opacity-80">
+                            <Waves lineColor="rgba(104, 54, 244, 0.15)" backgroundColor="transparent" waveSpeedX={0.02} waveSpeedY={0.01} waveAmpX={30} waveAmpY={20} friction={0.9} tension={0.01} maxCursorMove={80} xGap={15} yGap={15} />
+                        </div>
                         <div className="absolute -right-12 -top-12 w-56 h-56 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-all duration-500"></div>
                         <div className="relative z-10 flex flex-col gap-6">
                             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 dark:bg-primary/10 border border-purple-100 dark:border-primary/20 w-fit backdrop-blur-sm shadow-sm">
@@ -183,7 +183,7 @@ export default function SeoOptimizationService() {
                     </div>
 
                     {/* Desktop Sticky Sidebar Column */}
-                    <DesktopSidebar serviceName="SEO Optimization" expertName="Marcus Webb" expertRole="Director of Search Strategy" />
+                    <DesktopSidebar serviceName="SEO Optimization" />
 
                 </div>
                 {/* --- END DESKTOP 2-COLUMN LAYOUT --- */}
@@ -200,9 +200,9 @@ export default function SeoOptimizationService() {
                         </Link>
                     </div>
                 </section>
-            
-            <ServiceCrossLinks currentService="SEO Optimization" />
-        </main>
+
+                <ServiceCrossLinks currentService="SEO Optimization" />
+            </main>
         </div>
     );
 }

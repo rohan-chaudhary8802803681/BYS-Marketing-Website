@@ -42,7 +42,7 @@ const perks = [
 const openRoles = [
     { title: 'Senior React Engineer', dept: 'Engineering', type: 'Remote', location: 'Global' },
     { title: 'Full Stack Developer', dept: 'Engineering', type: 'Remote', location: 'Global' },
-    { title: 'Senior Product Designer', dept: 'Design', type: 'Hybrid', location: 'Bangalore' },
+    { title: 'Senior Product Designer', dept: 'Design', type: 'Hybrid', location: 'New Delhi' },
     { title: 'SEO Strategist', dept: 'Marketing', type: 'Remote', location: 'IST Preferred' },
     { title: 'Performance Marketing Manager', dept: 'Marketing', type: 'Remote', location: 'Global' },
     { title: 'Video Editor & Producer', dept: 'Media', type: 'Remote', location: 'Global' },

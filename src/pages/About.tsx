@@ -59,23 +59,37 @@ const founders = [
     {
         name: 'Rohan Kumar Chaudhary',
         title: 'Founder & CEO',
-        bio: 'Started as a solo hustler, worked behind the scenes for dozens of brands as a white-label partner, and built BYS from the ground up into a full-stack digital growth agency serving clients worldwide.',
-        img: '/rohan-chaudhary.jpg',
+        bio: "8 Years of Active Experience. Our journey into the world of Technology & Observing Markets began during my school years. Inspired by visual storytelling, Technological Advancements, AI, and psychology of human buying interests.",
+        img: 'https://bys.marketing/wp-content/uploads/2025/11/my-image-e1763896540734.jpeg',
         tags: ['Growth Strategy', 'Brand Architecture', 'Leadership'],
     },
     {
-        name: 'Vikram Sinha',
-        title: 'Head of Engineering',
-        bio: 'Full-stack wizard and performance nerd. If a website doesn\'t score 95+ on Lighthouse, he doesn\'t ship it. Leads the entire web development and infrastructure team.',
-        img: 'https://i.pravatar.cc/200?img=12',
+        name: 'Rupesh Jha',
+        title: 'Senior Dev.',
+        bio: "Driven by the belief that great design & technology advancements is not just about aesthetics to look cool; it's about creating meaningful connections between brands and their audiences.",
+        img: 'https://bys.marketing/wp-content/uploads/2025/09/about-img-300x300.jpg',
         tags: ['Engineering', 'Web Perf', 'Architecture'],
     },
     {
-        name: 'Ananya Kapoor',
-        title: 'Head of Marketing',
-        bio: 'Spent 6 years dissecting why consumers buy. Now uses that psychology to architect campaigns that convert cold traffic into loyal customers at scale.',
-        img: 'https://i.pravatar.cc/200?img=47',
-        tags: ['SEO', 'Content', 'Psychology'],
+        name: 'Abhishek Singh',
+        title: 'Junior Dev & Automations',
+        bio: "We embrace new technologies, stay ahead of industry trends, and expand our skill sets. Because in this hyper tech & AI era one needs to be always ready for any industry disruptive happenings.",
+        img: 'https://bys.marketing/wp-content/uploads/2025/09/abhishek-300x300.jpeg',
+        tags: ['Automations', 'Full Stack', 'AI'],
+    },
+    {
+        name: 'Jenny Wilson',
+        title: 'Global Client Manager',
+        bio: "Overseeing business operations from outside India, handling and managing success for our US and UK based clients with total transparency.",
+        img: 'https://bys.marketing/wp-content/uploads/2025/09/Docker-team-3-300x300.webp',
+        tags: ['US/UK Markets', 'Client Success', 'Global Strategy'],
+    },
+    {
+        name: 'Hiring Soon',
+        title: 'Freelancers & Interns',
+        bio: "We are currently expanding our team and looking for talented freelancers and interns. If you're a hustler who refuses to accept 'good enough', we want you here.",
+        img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=400',
+        tags: ['Hiring', 'Opportunities', 'Growth'],
     },
 ];
 
@@ -149,7 +163,7 @@ export default function About() {
                             </h2>
                             <div className="space-y-4 text-text-sub dark:text-white/60 leading-relaxed text-base md:text-lg">
                                 <p>
-                                    In 2016, BYS started in a shared apartment in Bangalore. Three friends, a shared laptop, and a conviction that Indian businesses were being underserved by agencies that churned out templates and called it strategy.
+                                    In 2016, BYS started in a shared apartment in New Delhi. Three friends, a shared laptop, and a conviction that Indian businesses were being underserved by agencies that churned out templates and called it strategy.
                                 </p>
                                 <p>
                                     We worked nights. We pitched everywhere. We got rejected constantly. But every "no" sharpened our thinking. We refused to dilute our standards — because we'd seen what mediocre marketing did to good businesses.
@@ -287,8 +301,8 @@ export default function About() {
                     <ScrollReveal>
                         <div className="text-center mb-14">
                             <span className="text-xs font-bold text-primary tracking-widest uppercase mb-3 block">The Team Behind It</span>
-                            <h2 className="text-4xl md:text-5xl font-black text-text-main dark:text-white">Meet the<br /><span className="text-primary">Founders</span></h2>
-                            <p className="text-text-sub dark:text-white/50 mt-4 max-w-xl mx-auto">Three obsessives who refused to accept "good enough" — in business or in life.</p>
+                            <h2 className="text-4xl md:text-5xl font-black text-text-main dark:text-white">Meet our<br /><span className="text-primary">Team</span></h2>
+                            <p className="text-text-sub dark:text-white/50 mt-4 max-w-xl mx-auto">A passionate group of obsessives who refuse to accept "good enough" — in business or in life.</p>
                         </div>
                     </ScrollReveal>
 

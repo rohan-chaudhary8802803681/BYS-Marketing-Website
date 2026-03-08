@@ -38,9 +38,24 @@ export default function Home() {
     ];
 
     const featuredWorks = [
-        { category: 'E-Commerce', title: 'Luxe Furniture', desc: 'A complete digital overhaul for a premium furniture brand, resulting in a 215% increase in mobile conversions.', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDHcnKtp2uqZpYu45qKVB5UG_ESHYBkyJ07Sw5XN8e05M_WmDhqgqQAfDbk7u5JsSE_fjoxWWvbChoTmkde9cz_7XAXmgD7sIS0GgKkfCQe6wRDmSNamSATxzEqOOzABoZnBrM0rnECE-3BELVrj4vMBzeoWYHTwfUmNq_7dWb3uyi_IS8nnrC-v5u3OMDyH6dmwhg7l3ldOmmUmgHogTf3GB13qYZnhOpDl2j4u49LTmCcQw7WUeLCMF2P6CW8JG_-Yio8YpnmaJ4' },
-        { category: 'FinTech', title: 'Nova Bank', desc: 'Secure, lightning-fast mobile banking experience. Reduced onboarding drop-offs by 40%.', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBorlZsSpmxV_0_GFc4illy20YXPg-I2gAU-aqBF4RZ3N43KimfWXFUcr2seI48VbLONNnRoIwyokMDetspqJ3AOHJBHX6tYvjIX2N7xf3FPEO7MoVo0k-Q4chKWxlwdGBcc2MldjluiulFN-4rGba_Lk5RC8itVlE4YHH_Ux79uFOUgIxCnEzE6H702LsWlUHOLxAsb80agR9Go_wmrDPLBd1TsPI-aSO9EtcP44s6ZqP7p_AiVsR_ddW0lvHXJ_Nj88sU86bTELQ' },
-        { category: 'SaaS Platform', title: 'Connect+', desc: 'Omnichannel launch strategy and high-converting landing pages for a B2B SaaS platform.', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAg92XdH-Dqy4z47c10P8CgacCvZ2QHkQQ03tcvr-cf_nCZL4DWz931xQbG1mzvItUC3S52EYCINx1T88lN3ESH5dyh7tO1Sx0OGiW6PmE5eoAWaOJxqJ9PsqEZNPhWNfK5Eb9USAUHh-D8lhWxpw8xt1UCbM4Q1pFF7UbU3EjUSd_cPm3IJO0e0-muuLgPbasHU2eLZUkLKLqxdabhtm0FnCTqz_qh3e0lzxDZX5OFxiLDVaSsHGxbu1f8EKAYj_CyLIwtRcuvG-E' },
+        {
+            category: 'Entertainment',
+            title: 'Mashup Minati Pro',
+            desc: 'High-energy event aggregator for royal weddings and stadium concerts. Built for massive scale and instant performance.',
+            img: '/portfolio/mashupminati.png'
+        },
+        {
+            category: 'Media Production',
+            title: 'TM Production',
+            desc: 'Premier media house showcase with high-end cinematography portfolio and automated booking infrastructure.',
+            img: '/portfolio/tmproduction.png'
+        },
+        {
+            category: 'Interior Design',
+            title: 'Design Furniture (DF)',
+            desc: 'Luxury metal fabrication & PVD coating digital showroom. Precision-engineered catalog for elite interior projects.',
+            img: '/portfolio/df.png'
+        },
     ];
 
     const logoLoopItems = [
@@ -312,7 +327,7 @@ export default function Home() {
                             ))}
                         </div>
                         <a
-                            href="https://wa.me/+919876543210?text=Hi%2C%20I%20want%20to%20discuss%20my%20project"
+                            href="https://wa.me/+918383894893?text=Hi%2C%20I%20want%20to%20discuss%20my%20project"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-white font-bold rounded-full shadow-[0_0_20px_rgba(104,54,244,0.4)] hover:shadow-[0_0_35px_rgba(104,54,244,0.6)] hover:bg-primary-dark transition-all duration-300"
@@ -392,7 +407,7 @@ export default function Home() {
                                     ))}
                                 </ul>
                                 <a
-                                    href={`https://wa.me/+919876543210?text=Hi%2C%20I'm%20interested%20in%20the%20${encodeURIComponent(plan.name)}%20plan`}
+                                    href={`https://wa.me/+918383894893?text=Hi%2C%20I'm%20interested%20in%20the%20${encodeURIComponent(plan.name)}%20plan`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className={`w-full py-3.5 rounded-xl font-bold text-center transition-all duration-300 block ${plan.highlight
@@ -407,7 +422,7 @@ export default function Home() {
                 </div>
                 <ScrollReveal>
                     <p className="text-center text-xs text-text-sub dark:text-text-sub-dark mt-6">
-                        All plans include onboarding, strategy session, and monthly reports. Need something custom? <a href="https://wa.me/+919876543210" className="text-primary font-bold hover:underline">Chat with us</a>.
+                        All plans include onboarding, strategy session, and monthly reports. Need something custom? <a href="https://wa.me/+918383894893" className="text-primary font-bold hover:underline">Chat with us</a>.
                     </p>
                 </ScrollReveal>
             </section>

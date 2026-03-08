@@ -192,29 +192,29 @@ export default function WebDevService() {
                         <h3 className="text-3xl font-bold text-text-main dark:text-text-main-dark mb-8 tracking-tight transition-colors">Recent Deployments</h3>
                         <div className="flex gap-8 overflow-x-auto no-scrollbar pb-12 -mx-6 px-6 lg:mx-0 lg:px-0 snap-x lg:snap-none">
                             <div className="snap-center shrink-0 w-[300px] md:w-[400px] h-[480px] rounded-[2rem] relative overflow-hidden group shadow-xl shadow-gray-200 dark:shadow-none border border-transparent dark:border-white/5 cursor-pointer">
-                                <img alt="Luxe Furniture ecommerce" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHcnKtp2uqZpYu45qKVB5UG_ESHYBkyJ07Sw5XN8e05M_WmDhqgqQAfDbk7u5JsSE_fjoxWWvbChoTmkde9cz_7XAXmgD7sIS0GgKkfCQe6wRDcSNamSATxzEqOOzABoZnBrM0rnECE-3BELVrj4vMBzeoWYHTwfUmNq_7dWb3uyi_IS8nnrC-v5u3OMDyH6dmwhg7l3ldOmmUmgHogTf3GB13qYZnhOpDl2j4u49LTmCcQw7WUeLCMF2P6CW8JG_-Yio8YpnmaJ4" loading="lazy" />
+                                <img alt="Mashup Minati Pro Event Aggregator" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/portfolio/mashupminati.png" loading="lazy" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                    <span className="text-xs font-bold text-white bg-primary/90 backdrop-blur-md px-3 py-1.5 rounded-lg w-fit mb-3 shadow-lg">E-Commerce</span>
-                                    <h4 className="text-3xl font-bold text-white mb-2">Luxe Furniture</h4>
-                                    <p className="text-base text-gray-300 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">Headless Shopify implementation with Next.js frontend.</p>
+                                    <span className="text-xs font-bold text-white bg-primary/90 backdrop-blur-md px-3 py-1.5 rounded-lg w-fit mb-3 shadow-lg">Entertainment</span>
+                                    <h4 className="text-3xl font-bold text-white mb-2">Mashup Minati Pro</h4>
+                                    <p className="text-base text-gray-300 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">Immersive, high-energy digital presence for India's premier event aggregator.</p>
                                 </div>
                             </div>
 
                             <div className="snap-center shrink-0 w-[300px] md:w-[400px] h-[480px] rounded-[2rem] relative overflow-hidden group shadow-xl shadow-gray-200 dark:shadow-none border border-transparent dark:border-white/5 cursor-pointer">
-                                <img alt="Nova Bank SaaS" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBorlZsSpmxV_0_GFc4illy20YXPg-I2gAU-aqBF4RZ3N43KimfWXFUcr2seI48VbLONNnRoIwyokMDetspqJ3AOHJBHX6tYvjIX2N7xf3FPEO7MoVo0k-Q4chKWxlwdGBcc2MldjluiulFN-4rGba_Lk5RC8itVlE4YHH_Ux79uFOUgIxCnEzE6H702LsWlUHOLxAsb80agR9Go_wmrDPLBd1TsPI-aSO9EtcP44s6ZqP7p_AiVsR_ddW0lvHXJ_Nj88sU86bTELQ" />
+                                <img alt="Design Furniture Catalog" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/portfolio/df.png" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                    <span className="text-xs font-bold text-white bg-primary/90 backdrop-blur-md px-3 py-1.5 rounded-lg w-fit mb-3 shadow-lg">SaaS Platform</span>
-                                    <h4 className="text-3xl font-bold text-white mb-2">Nova Bank</h4>
-                                    <p className="text-base text-gray-300 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">Real-time financial dashboard with WebSockets.</p>
+                                    <span className="text-xs font-bold text-white bg-primary/90 backdrop-blur-md px-3 py-1.5 rounded-lg w-fit mb-3 shadow-lg">Fabrication Catalog</span>
+                                    <h4 className="text-3xl font-bold text-white mb-2">Design Furniture</h4>
+                                    <p className="text-base text-gray-300 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">Comprehensive cataloging system tailored for B2B interior architecture lines.</p>
                                 </div>
                             </div>
 
                             <div className="snap-center shrink-0 w-[300px] md:w-[400px] h-[480px] rounded-[2rem] relative overflow-hidden group shadow-xl shadow-gray-200 dark:shadow-none border border-transparent dark:border-white/5 cursor-pointer">
-                                <img alt="Connect+ Social tech" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg92XdH-Dqy4z47c10P8CgacCvZ2QHkQQ03tcvr-cf_nCZL4DWz931xQbG1mzvItUC3S52EYCINx1T88lN3ESH5dyh7tO1Sx0OGiW6PmE5eoAWaOJxqJ9PsqEZNPhWNfK5Eb9USAUHh-D8lhWxpw8xt1UCbM4Q1pFF7UbU3EjUSd_cPm3IJO0e0-muuLgPbasHU2eLZUkLKLqxdabhtm0FnCTqz_qh3e0lzxDZX5OFxiLDVaSsHGxbu1f8EKAYj_CyLIwtRcuvG-E" />
+                                <img alt="Advocate Yajuvandra Legal Services" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/portfolio/advocate.png" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                    <span className="text-xs font-bold text-white bg-primary/90 backdrop-blur-md px-3 py-1.5 rounded-lg w-fit mb-3 shadow-lg">Social Tech</span>
-                                    <h4 className="text-3xl font-bold text-white mb-2">Connect+</h4>
-                                    <p className="text-base text-gray-300 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">Progressive Web App with offline capabilities.</p>
+                                    <span className="text-xs font-bold text-white bg-primary/90 backdrop-blur-md px-3 py-1.5 rounded-lg w-fit mb-3 shadow-lg">Legal Services</span>
+                                    <h4 className="text-3xl font-bold text-white mb-2">Advocate Yajuvandra</h4>
+                                    <p className="text-base text-gray-300 line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">Secure consultation portal prioritizing clear communication and expertise.</p>
                                 </div>
                             </div>
                         </div>
@@ -285,7 +285,7 @@ export default function WebDevService() {
                 </div>
 
                 {/* Desktop Sticky Sidebar Column */}
-                <DesktopSidebar serviceName="Web Development" expertName="Michael Chang" expertRole="Technical Director" />
+                <DesktopSidebar serviceName="Web Development" />
 
             </div >
             {/* --- END DESKTOP 2-COLUMN LAYOUT --- */}

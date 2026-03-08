@@ -4,17 +4,15 @@ import MultiStepIntake from './MultiStepIntake';
 
 interface DesktopSidebarProps {
     serviceName?: string;
-    expertName?: string;
-    expertRole?: string;
     showContactForm?: boolean;
 }
 
 export default function DesktopSidebar({
     serviceName = 'Marketing',
-    expertName = 'Sarah Jenkins',
-    expertRole = 'Lead Strategist',
     showContactForm = true
 }: DesktopSidebarProps) {
+    const expertName = 'Rohan Chaudhary';
+    const expertRole = 'Founder & CEO';
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [website, setWebsite] = useState('');
@@ -28,7 +26,7 @@ export default function DesktopSidebar({
                 <div className="flex items-start gap-4 mb-4">
                     <div className="w-16 h-16 rounded-2xl overflow-hidden ring-2 ring-primary/20 bg-gray-100">
                         <img
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUWQRgHICULwrp3TyEYUT1ysk_CActzgv40cjMxkkoEvDPxLda6us-klxy8UfJVUw97218G2C76FUIIhF1sGMe4V7pvgKWLYVtzSdL1f_BpJqKDgxKgIXGxkXk-sB5AVdLSLFKfkILKdd9krfCdflegvvOcKt35C4yBnZNlUHKPAHhbBhdyxpOAXu3GQqe2eg7L3WePrYDc7LgMZFqxEpVqlnJhbHOzDC9qb0o0zXV-GeNH4hYkDrvZ_22wV-ZN3GLu_NKmw_aOWM"
+                            src="/rohan-chaudhary.jpg"
                             alt={expertName}
                             className="w-full h-full object-cover"
                         />
@@ -46,12 +44,12 @@ export default function DesktopSidebar({
                     "I oversee all {serviceName} implementations. Tap the button below to connect with me directly."
                 </p>
                 <div className="grid grid-cols-2 gap-2">
-                    <button className="flex items-center justify-center gap-2 py-2.5 rounded-xl border border-gray-200 dark:border-white/10 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-xs font-bold text-text-main dark:text-white">
+                    <a href="tel:+918383894893" className="flex items-center justify-center gap-2 py-2.5 rounded-xl border border-gray-200 dark:border-white/10 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-xs font-bold text-text-main dark:text-white">
                         <Phone size={14} /> Call Me
-                    </button>
-                    <button className="flex items-center justify-center gap-2 py-2.5 rounded-xl border border-gray-200 dark:border-white/10 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-xs font-bold text-text-main dark:text-white">
+                    </a>
+                    <a href="mailto:hello@bys.marketing" className="flex items-center justify-center gap-2 py-2.5 rounded-xl border border-gray-200 dark:border-white/10 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-xs font-bold text-text-main dark:text-white">
                         <Mail size={14} /> Email Me
-                    </button>
+                    </a>
                 </div>
             </div>
 

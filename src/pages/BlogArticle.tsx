@@ -179,7 +179,7 @@ export default function BlogArticle() {
                         </p>
                         <div className="flex flex-wrap items-center justify-center gap-4 md:gap-8 text-sm text-text-sub dark:text-gray-400 font-medium border-y border-gray-100 dark:border-white/10 py-4">
                             <span className="flex items-center gap-2">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=100&h=100" alt={article.author} className="w-8 h-8 rounded-full object-cover" />
+                                <img src="/rohan-chaudhary.jpg" alt={article.author} className="w-8 h-8 rounded-full object-cover" />
                                 <strong className="text-text-main dark:text-white">{article.author}</strong>
                             </span>
                             <span>•</span>

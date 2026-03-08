@@ -41,6 +41,8 @@ const PrivacyPolicy = React.lazy(() => import('./pages/PrivacyPolicy'));
 const TermsOfService = React.lazy(() => import('./pages/TermsOfService'));
 const HostingerOffer = React.lazy(() => import('./pages/HostingerOffer'));
 const StartupSupport = React.lazy(() => import('./pages/StartupSupport'));
+const LocalizedServiceWrapper = React.lazy(() => import('./pages/LocalizedServiceWrapper'));
+const LocationsSitemap = React.lazy(() => import('./pages/LocationsSitemap'));
 
 function App() {
   return (
@@ -80,6 +82,10 @@ function App() {
             <Route path="terms" element={<TermsOfService />} />
             <Route path="hostinger-discount-code" element={<HostingerOffer />} />
             <Route path="startups" element={<StartupSupport />} />
+
+            {/* SEO Dynamic Localized Routes */}
+            <Route path="locations" element={<LocationsSitemap />} />
+            <Route path="in/:location/:serviceId" element={<LocalizedServiceWrapper />} />
           </Route>
         </Routes>
       </Suspense>

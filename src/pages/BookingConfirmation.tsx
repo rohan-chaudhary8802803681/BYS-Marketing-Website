@@ -68,7 +68,7 @@ export default function BookingConfirmation() {
                         <div className="bg-white dark:bg-[#1a1a1a] rounded-2xl p-6 border border-gray-100 dark:border-white/5 shadow-[8px_8px_24px_rgba(220,220,230,0.5),-8px_-8px_24px_rgba(255,255,255,1)] dark:shadow-none flex items-center gap-5 transition-all">
                             <div className="relative">
                                 <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-white dark:border-[#1a1a1a] shadow-lg bg-gray-100 transition-colors">
-                                    <img alt="Consultant" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu9XEnFTFs3rov-2_MZILg_bqW-W1DIzkAnD2qaVPFZz5qdV3SNCKI57NyzScIclLh_msMHXeK4N-TU9ivYYb6P46gvLfHiWlEOCMUeGrKsBM8qbfPF-ay1VNHhyBb9uN_pWGg1W3MGDmCGaKMqO52lqkZgL7mkoPz1X3TYwbqkqosSeBJwVUiVNsT-PA5DqHCyWvxCNRJuGP4f0TCrDQBDe4yByGwc7pFUBfSk08lNOIcDvCmoYV_B9krLK4IsNMpkb9Nu20LY_c" />
+                                    <img alt="Consultant" className="w-full h-full object-cover" src="/rohan-chaudhary.jpg" />
                                 </div>
                                 <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-full border-2 border-white dark:border-[#1a1a1a] flex items-center justify-center transition-colors">
                                     <Check sx={{ fontSize: 14, color: 'white' }} />

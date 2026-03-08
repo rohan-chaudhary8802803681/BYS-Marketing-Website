@@ -55,7 +55,7 @@ export default function ServiceCrossLinks({ currentService }: ServiceCrossLinksP
                         <p className="text-white/80 text-sm">Free consultation · No commitment · Reply within 2 hours</p>
                     </div>
                     <div className="flex gap-3">
-                        <a href="https://wa.me/+919876543210?text=Hi%2C%20I%27m%20interested%20in%20your%20services" target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 bg-white text-primary font-bold text-sm rounded-xl hover:bg-gray-100 transition-colors flex items-center gap-2">
+                        <a href="https://wa.me/+918383894893?text=Hi%2C%20I%27m%20interested%20in%20your%20services" target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 bg-white text-primary font-bold text-sm rounded-xl hover:bg-gray-100 transition-colors flex items-center gap-2">
                             <MessageCircle size={16} /> WhatsApp
                         </a>
                         <Link to="/contact" className="px-5 py-2.5 bg-white/20 text-white font-bold text-sm rounded-xl hover:bg-white/30 transition-colors border border-white/30">

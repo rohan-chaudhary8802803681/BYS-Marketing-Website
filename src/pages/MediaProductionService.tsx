@@ -1,12 +1,11 @@
+import { useState } from 'react';
 import {
     ArrowForward,
     PlayCircle,
     PlayArrow,
     Visibility,
     MovieFilter,
-    AutoStories,
     Movie,
-    GraphicEq,
     Animation,
     CameraAlt,
     ChevronRight,
@@ -24,6 +23,8 @@ export default function MediaProductionService() {
         "areaServed": "Worldwide",
         "description": "Cinematic media production including 4K video, brand storytelling, commercial ads, sound design, motion graphics, and photography. Strategic partnership with TM Production."
     };
+
+    const [isVideoOpen, setIsVideoOpen] = useState(false);
 
     return (
         <div className="bg-white dark:bg-[#0a0a0a] text-text-main dark:text-text-main-dark min-h-screen flex flex-col pb-32 transition-colors">
@@ -75,7 +76,7 @@ export default function MediaProductionService() {
                                     <span>Get Started</span>
                                     <ArrowForward fontSize="small" />
                                 </button>
-                                <button className="flex h-14 items-center justify-center gap-2 rounded-xl bg-white dark:bg-[#1a1a1a] px-8 text-base font-bold text-text-main dark:text-text-main-dark border border-gray-200 dark:border-white/10 shadow-sm dark:shadow-none hover:bg-gray-50 dark:hover:bg-white/5 transition-all">
+                                <button onClick={() => setIsVideoOpen(true)} className="flex h-14 items-center justify-center gap-2 rounded-xl bg-white dark:bg-[#1a1a1a] px-8 text-base font-bold text-text-main dark:text-text-main-dark border border-gray-200 dark:border-white/10 shadow-sm dark:shadow-none hover:bg-gray-50 dark:hover:bg-white/5 transition-all">
                                     <PlayCircle sx={{ color: 'inherit' }} />
                                     <span>Watch Showreel</span>
                                 </button>
@@ -102,7 +103,7 @@ export default function MediaProductionService() {
                                     <h3 className="text-white text-2xl font-bold mb-1">BYS 2024 Showreel</h3>
                                     <p className="text-white/70 text-sm">Cinematic Excellence • 03:45</p>
                                 </div>
-                                <button className="h-14 w-14 rounded-full bg-white text-black flex items-center justify-center hover:bg-primary hover:text-white transition-all shadow-lg hover:scale-110">
+                                <button onClick={() => setIsVideoOpen(true)} className="h-14 w-14 rounded-full bg-white text-black flex items-center justify-center hover:bg-primary hover:text-white transition-all shadow-lg hover:scale-110">
                                     <PlayArrow sx={{ fontSize: 32 }} />
                                 </button>
                             </div>
@@ -131,69 +132,73 @@ export default function MediaProductionService() {
                             </div>
                         </div>
 
-                        {/* Service Features */}
-                        <div className="md:col-span-6 lg:col-span-4 bg-white dark:bg-[#1a1a1a] rounded-3xl p-8 border border-gray-100 dark:border-white/5 shadow-soft dark:shadow-none relative overflow-hidden group transition-colors">
-                            <div className="absolute top-0 right-0 p-6 opacity-50 group-hover:opacity-100 transition-opacity">
-                                <ArrowForward className="text-gray-300 dark:text-gray-600 group-hover:text-primary transition-colors transform -rotate-45" />
-                            </div>
-                            <div className="mb-6">
-                                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#7c4dff] to-primary flex items-center justify-center text-white shadow-[inset_-3px_-3px_6px_rgba(104,54,244,0.3),inset_3px_3px_6px_rgba(255,255,255,0.5)] transform group-hover:scale-110 transition-transform duration-300">
-                                    <AutoStories fontSize="large" />
+                        {/* Service Features Updated for TM Production */}
+                        <div className="md:col-span-6 lg:col-span-4 bg-white dark:bg-[#1a1a1a] rounded-3xl p-8 border border-gray-100 dark:border-white/5 shadow-soft dark:shadow-none relative overflow-hidden group transition-colors flex flex-col justify-between">
+                            <div>
+                                <div className="mb-6">
+                                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#7c4dff] to-primary flex items-center justify-center text-white shadow-[inset_-3px_-3px_6px_rgba(104,54,244,0.3),inset_3px_3px_6px_rgba(255,255,255,0.5)] transform group-hover:scale-110 transition-transform duration-300">
+                                        <Movie fontSize="large" />
+                                    </div>
                                 </div>
+                                <h3 className="text-xl font-bold text-text-main dark:text-text-main-dark mb-2 transition-colors">Cinematic Videography</h3>
+                                <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed transition-colors mb-4">Advertising, Corporate, Event Coverage, and Fashion Films produced with industry-leading equipment.</p>
                             </div>
-                            <h3 className="text-xl font-bold text-text-main dark:text-text-main-dark mb-2 transition-colors">Brand Storytelling</h3>
-                            <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed transition-colors">Compelling narratives that build deep connections with your audience.</p>
+                            <ul className="text-xs font-bold text-text-sub dark:text-text-sub-dark space-y-1">
+                                <li>• Commercial & Ad Films</li>
+                                <li>• Real Estate Videos</li>
+                                <li>• Documentaries & Events</li>
+                            </ul>
                         </div>
 
-                        <div className="md:col-span-6 lg:col-span-4 bg-white dark:bg-[#1a1a1a] rounded-3xl p-8 border border-gray-100 dark:border-white/5 shadow-soft dark:shadow-none relative overflow-hidden group transition-colors">
-                            <div className="absolute top-0 right-0 p-6 opacity-50 group-hover:opacity-100 transition-opacity">
-                                <ArrowForward className="text-gray-300 dark:text-gray-600 group-hover:text-primary transition-colors transform -rotate-45" />
-                            </div>
-                            <div className="mb-6">
-                                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#7c4dff] to-primary flex items-center justify-center text-white shadow-[inset_-3px_-3px_6px_rgba(104,54,244,0.3),inset_3px_3px_6px_rgba(255,255,255,0.5)] transform group-hover:scale-110 transition-transform duration-300">
-                                    <Movie fontSize="large" />
+                        <div className="md:col-span-6 lg:col-span-4 bg-white dark:bg-[#1a1a1a] rounded-3xl p-8 border border-gray-100 dark:border-white/5 shadow-soft dark:shadow-none relative overflow-hidden group transition-colors flex flex-col justify-between">
+                            <div>
+                                <div className="mb-6">
+                                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#7c4dff] to-primary flex items-center justify-center text-white shadow-[inset_-3px_-3px_6px_rgba(104,54,244,0.3),inset_3px_3px_6px_rgba(255,255,255,0.5)] transform group-hover:scale-110 transition-transform duration-300">
+                                        <CameraAlt fontSize="large" />
+                                    </div>
                                 </div>
+                                <h3 className="text-xl font-bold text-text-main dark:text-text-main-dark mb-2 transition-colors">Professional Photography</h3>
+                                <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed transition-colors mb-4">High-end shoots capturing the essence of your brand, from product catalogs to model portfolios.</p>
                             </div>
-                            <h3 className="text-xl font-bold text-text-main dark:text-text-main-dark mb-2 transition-colors">Commercial Ads</h3>
-                            <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed transition-colors">High-fidelity production for TV and digital advertising campaigns.</p>
+                            <ul className="text-xs font-bold text-text-sub dark:text-text-sub-dark space-y-1">
+                                <li>• E-Commerce & Product</li>
+                                <li>• Fashion & Fine Art</li>
+                                <li>• Food Photography</li>
+                            </ul>
                         </div>
 
-                        <div className="md:col-span-6 lg:col-span-4 bg-white dark:bg-[#1a1a1a] rounded-3xl p-8 border border-gray-100 dark:border-white/5 shadow-soft dark:shadow-none relative overflow-hidden group transition-colors">
-                            <div className="absolute top-0 right-0 p-6 opacity-50 group-hover:opacity-100 transition-opacity">
-                                <ArrowForward className="text-gray-300 dark:text-gray-600 group-hover:text-primary transition-colors transform -rotate-45" />
-                            </div>
-                            <div className="mb-6">
-                                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#7c4dff] to-primary flex items-center justify-center text-white shadow-[inset_-3px_-3px_6px_rgba(104,54,244,0.3),inset_3px_3px_6px_rgba(255,255,255,0.5)] transform group-hover:scale-110 transition-transform duration-300">
-                                    <GraphicEq fontSize="large" />
+                        <div className="md:col-span-6 lg:col-span-4 bg-white dark:bg-[#1a1a1a] rounded-3xl p-8 border border-gray-100 dark:border-white/5 shadow-soft dark:shadow-none relative overflow-hidden group transition-colors flex flex-col justify-between">
+                            <div>
+                                <div className="mb-6">
+                                    <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#7c4dff] to-primary flex items-center justify-center text-white shadow-[inset_-3px_-3px_6px_rgba(104,54,244,0.3),inset_3px_3px_6px_rgba(255,255,255,0.5)] transform group-hover:scale-110 transition-transform duration-300">
+                                        <Animation fontSize="large" />
+                                    </div>
                                 </div>
+                                <h3 className="text-xl font-bold text-text-main dark:text-text-main-dark mb-2 transition-colors">Post-Production & VFX</h3>
+                                <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed transition-colors mb-4">Complete polishing of your media with stunning visual effects, color grading, and crisp edits.</p>
                             </div>
-                            <h3 className="text-xl font-bold text-text-main dark:text-text-main-dark mb-2 transition-colors">Sound Design</h3>
-                            <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed transition-colors">Immersive audio engineering, custom scores, and foley work.</p>
-                        </div>
-
-                        <div className="md:col-span-6 lg:col-span-4 bg-white dark:bg-[#1a1a1a] rounded-3xl p-8 border border-gray-100 dark:border-white/5 shadow-soft dark:shadow-none relative overflow-hidden group transition-colors">
-                            <div className="absolute top-0 right-0 p-6 opacity-50 group-hover:opacity-100 transition-opacity">
-                                <ArrowForward className="text-gray-300 dark:text-gray-600 group-hover:text-primary transition-colors transform -rotate-45" />
-                            </div>
-                            <div className="mb-6">
-                                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#7c4dff] to-primary flex items-center justify-center text-white shadow-[inset_-3px_-3px_6px_rgba(104,54,244,0.3),inset_3px_3px_6px_rgba(255,255,255,0.5)] transform group-hover:scale-110 transition-transform duration-300">
-                                    <Animation fontSize="large" />
-                                </div>
-                            </div>
-                            <h3 className="text-xl font-bold text-text-main dark:text-text-main-dark mb-2 transition-colors">Motion FX</h3>
-                            <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed transition-colors">Cutting-edge visual effects and motion graphics for dynamic impact.</p>
+                            <ul className="text-xs font-bold text-text-sub dark:text-text-sub-dark space-y-1">
+                                <li>• 3D/2D Animation</li>
+                                <li>• Motion Graphics & Infographics</li>
+                                <li>• Advanced Video Editing</li>
+                            </ul>
                         </div>
 
                         {/* Wide Feature */}
                         <div className="md:col-span-12 lg:col-span-8 bg-white dark:bg-[#1a1a1a] rounded-3xl p-8 lg:p-10 border border-gray-100 dark:border-white/5 shadow-soft dark:shadow-none relative overflow-hidden flex flex-col md:flex-row items-start md:items-center gap-8 group transition-colors">
                             <div className="flex-shrink-0">
                                 <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#7c4dff] to-primary flex items-center justify-center text-white shadow-[inset_-3px_-3px_6px_rgba(104,54,244,0.3),inset_3px_3px_6px_rgba(255,255,255,0.5)] transform group-hover:rotate-12 transition-transform duration-300">
-                                    <CameraAlt sx={{ fontSize: 40 }} />
+                                    <MovieFilter sx={{ fontSize: 40 }} />
                                 </div>
                             </div>
                             <div className="flex-grow">
-                                <h3 className="text-2xl font-bold text-text-main dark:text-text-main-dark mb-2 transition-colors">Photography & Technical Shoots</h3>
-                                <p className="text-gray-500 dark:text-gray-400 leading-relaxed max-w-lg transition-colors">Precision photography and videography showcasing product details with macro shots and dynamic lighting setups designed to highlight unique features.</p>
+                                <h3 className="text-2xl font-bold text-text-main dark:text-text-main-dark mb-2 transition-colors">Specialized & Pre-Production</h3>
+                                <p className="text-gray-500 dark:text-gray-400 leading-relaxed max-w-lg transition-colors mb-3">From scratch to screen. We handle Scripting, Voice Overs, and Storyboarding, along with specialized Drone shoots and Virtual Reality 360° coverage.</p>
+                                <div className="flex flex-wrap gap-2 mt-2">
+                                    <span className="text-[10px] font-bold uppercase tracking-wider bg-primary/10 text-primary px-3 py-1 rounded-full border border-primary/20">Drone Videography</span>
+                                    <span className="text-[10px] font-bold uppercase tracking-wider bg-blue-500/10 text-blue-500 px-3 py-1 rounded-full border border-blue-500/20">VR 360°</span>
+                                    <span className="text-[10px] font-bold uppercase tracking-wider bg-purple-500/10 text-purple-500 px-3 py-1 rounded-full border border-purple-500/20">Script Writing & VO</span>
+                                </div>
                             </div>
                             <div className="hidden md:block">
                                 <ChevronRight sx={{ fontSize: 40 }} className="text-gray-300 dark:text-gray-600 group-hover:text-primary transition-colors" />
@@ -312,6 +317,31 @@ export default function MediaProductionService() {
 
                 <ServiceCrossLinks currentService="Media Production" />
             </main>
+
+            {/* YouTube Video Modal */}
+            {isVideoOpen && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-md animate-in fade-in duration-300">
+                    <div className="relative w-full max-w-5xl aspect-video bg-black rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(104,54,244,0.3)] border border-white/10">
+                        <button
+                            onClick={() => setIsVideoOpen(false)}
+                            className="absolute top-5 right-5 z-10 w-12 h-12 bg-black/60 hover:bg-black rounded-full text-white flex items-center justify-center backdrop-blur-md border border-white/20 transition-all hover:scale-110 hover:border-white text-xl font-bold"
+                            aria-label="Close Video"
+                        >
+                            ✕
+                        </button>
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/75M2gwUv5Pk?autoplay=1"
+                            title="TM Production Showreel"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen>
+                        </iframe>
+                    </div>
+                </div>
+            )}
+
         </div>
     );
 }

@@ -1,6 +1,6 @@
 import ScrollReveal from '../components/ScrollReveal';
 import { useState, useEffect, useRef } from 'react';
-import { ExternalLink, Layout, Sparkles, ArrowRight, Search, Monitor, Loader2 } from 'lucide-react';
+import { ExternalLink, Layout, Sparkles, Search, Monitor, Loader2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEOHead from '../components/SEOHead';
 import Waves from '../components/ReactBits/Waves';
@@ -8,12 +8,43 @@ import templatesData from '../data/templates.json';
 
 const templates = templatesData;
 
-// ─── CLIENT WEBSITES (PROOF OF WORK — PLACEHOLDERS) ───
+// ─── CLIENT WEBSITES (ACTUAL LIVE BUILDS) ───
 const clientWork = [
-    { name: 'TM Production', category: 'Media Production', desc: 'Full-scale media production website with booking system & portfolio showcase.', placeholder: true },
-    { name: 'NovaTech Solutions', category: 'SaaS Platform', desc: 'Custom SaaS dashboard with analytics, user management, and subscription flow.', placeholder: true },
-    { name: 'Luxe & Co Real Estate', category: 'Real Estate', desc: 'Luxury property listing site with advanced filters, virtual tours, and lead gen.', placeholder: true },
-    { name: 'FreshBite Restaurants', category: 'E-Commerce / F&B', desc: 'Multi-branch restaurant ordering platform with delivery tracking integration.', placeholder: true },
+    {
+        name: 'TM Production',
+        category: 'Media Production',
+        desc: 'Award-winning media production house in Delhi. Performance-optimized portfolio showcasing high-end cinematography.',
+        image: '/portfolio/tmproduction.png',
+        url: 'https://tmproduction.in/'
+    },
+    {
+        name: 'Mashup Minati',
+        category: 'Entertainment',
+        desc: 'India\'s premier event aggregator. High-energy interface for royal weddings and stadium concerts.',
+        image: '/portfolio/mashupminati.png',
+        url: 'https://demo.bys.marketing/MashupMinatiPro/'
+    },
+    {
+        name: 'Yajuvandra Chaudhary',
+        category: 'Legal',
+        desc: 'Professional law firm website for high-profile advocates. Focused on credibility and client trust.',
+        image: '/portfolio/advocate.png',
+        url: 'https://advocateyajuvandra.in/'
+    },
+    {
+        name: 'Design Furniture (DF)',
+        category: 'Interior Design',
+        desc: 'Luxury metal fabrication & PVD coating showcase. Precision-tailored digital showroom for elite spaces.',
+        image: '/portfolio/df.png',
+        url: 'https://demo.bys.marketing/df/'
+    },
+    {
+        name: 'PGRP Casting Industry',
+        category: 'Industrial',
+        desc: 'Advanced industrial supplier portal with B2B catalog integration and manufacturing excellence display.',
+        image: '/portfolio/pgrp.png',
+        url: 'https://www.pgrpcasting.com/'
+    },
 ];
 
 const allCategories = ['All', ...Array.from(new Set(templates.map(t => t.category)))];
@@ -121,29 +152,54 @@ export default function WebsiteDemos() {
                         <p className="text-text-sub dark:text-text-sub-dark max-w-lg mx-auto">These are some of our most recent client websites — built, optimized, and launched by BYS Marketing. We have many more like these.</p>
                     </div>
                 </ScrollReveal>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {clientWork.map((work, i) => (
                         <ScrollReveal key={i} delay={i * 0.1}>
-                            <div className="group relative rounded-3xl overflow-hidden border border-gray-100 dark:border-white/10 bg-white dark:bg-[#1a1a1a] shadow-sm hover:shadow-floating hover:-translate-y-1 transition-all duration-300">
-                                {/* Placeholder thumbnail */}
-                                <div className="h-52 bg-gradient-to-br from-primary/10 to-purple-500/5 dark:from-primary/20 dark:to-purple-900/10 flex items-center justify-center">
-                                    <div className="text-center">
-                                        <Monitor size={48} className="text-primary/40 mx-auto mb-3" />
-                                        <p className="text-xs font-bold text-primary/60 uppercase tracking-widest">Screenshot Coming Soon</p>
+                            <div className="group relative rounded-3xl overflow-hidden border border-gray-100 dark:border-white/10 bg-white dark:bg-[#1a1a1a] shadow-sm hover:shadow-floating hover:-translate-y-1 transition-all duration-300 h-full flex flex-col">
+                                {/* Screenshot Container */}
+                                <div className="h-52 overflow-hidden bg-gray-100 dark:bg-black/50 relative">
+                                    {work.image ? (
+                                        <img
+                                            src={work.image}
+                                            alt={`${work.name} live website screenshot`}
+                                            className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                                        />
+                                    ) : (
+                                        <div className="flex items-center justify-center h-full">
+                                            <div className="text-center">
+                                                <Monitor size={48} className="text-primary/40 mx-auto mb-3" />
+                                                <p className="text-xs font-bold text-primary/60 uppercase tracking-widest">Screenshot Coming Soon</p>
+                                            </div>
+                                        </div>
+                                    )}
+                                    <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                        <a href={work.url} target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-white text-primary font-bold rounded-full text-sm shadow-xl translate-y-4 group-hover:translate-y-0 transition-all">
+                                            Visit Website
+                                        </a>
                                     </div>
                                 </div>
-                                <div className="p-6">
-                                    <span className="text-xs font-black text-primary uppercase tracking-widest">{work.category}</span>
+                                <div className="p-6 flex-1 flex flex-col">
+                                    <span className="text-[10px] font-black text-primary uppercase tracking-widest">{work.category}</span>
                                     <h3 className="text-xl font-black text-text-main dark:text-white mt-1 mb-2">{work.name}</h3>
-                                    <p className="text-sm text-text-sub dark:text-text-sub-dark leading-relaxed mb-4">{work.desc}</p>
-                                    <a
-                                        href={`https://wa.me/+919876543210?text=Hi%2C%20I%20want%20a%20website%20like%20${encodeURIComponent(work.name)}`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline"
-                                    >
-                                        Request a similar website <ArrowRight size={14} />
-                                    </a>
+                                    <p className="text-sm text-text-sub dark:text-text-sub-dark leading-relaxed mb-6 flex-1">{work.desc}</p>
+                                    <div className="flex gap-3 pt-4 border-t border-gray-50 dark:border-white/5">
+                                        <a
+                                            href={work.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex-1 text-center py-2.5 rounded-xl bg-gray-50 dark:bg-white/5 font-bold text-xs text-text-main dark:text-white hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
+                                        >
+                                            Live Site
+                                        </a>
+                                        <a
+                                            href={`https://wa.me/+918383894893?text=Hi%2C%20I%20want%20a%20website%20like%20${encodeURIComponent(work.name)}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="flex-1 text-center py-2.5 rounded-xl bg-primary text-white font-bold text-xs hover:bg-primary-dark transition-colors"
+                                        >
+                                            Request Similar
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </ScrollReveal>
@@ -217,7 +273,7 @@ export default function WebsiteDemos() {
                                             Live Preview
                                         </a>
                                         <a
-                                            href={`https://wa.me/+919876543210?text=Hi%2C%20I%20want%20the%20${encodeURIComponent(tpl.name)}%20design%20for%20my%20brand`}
+                                            href={`https://wa.me/+918383894893?text=Hi%2C%20I%20want%20the%20${encodeURIComponent(tpl.name)}%20design%20for%20my%20brand`}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="flex-1 text-center py-2.5 rounded-xl bg-primary text-white font-bold text-sm hover:bg-primary-dark transition-colors shadow-sm"
@@ -255,7 +311,7 @@ export default function WebsiteDemos() {
                         <p className="text-gray-400 text-base md:text-lg mb-8 max-w-xl mx-auto">We build fully custom websites from scratch. Tell us your vision and we'll bring it to life — pixel-perfect and performance-obsessed.</p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <a
-                                href="https://wa.me/+919876543210?text=Hi%2C%20I%20want%20a%20fully%20custom%20website"
+                                href="https://wa.me/+918383894893?text=Hi%2C%20I%20want%20a%20fully%20custom%20website"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="px-8 py-4 bg-primary text-white font-bold rounded-full shadow-[0_0_20px_rgba(104,54,244,0.4)] hover:bg-primary-dark transition-all"

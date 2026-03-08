@@ -31,15 +31,15 @@ export default function LottieIcon({ animationData, size = 30, className = '' }:
         <div
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            style={{ width: size, height: size }}
-            className={className}
+            className={`lottie-icon-container ${className}`}
+            style={{ '--icon-size': `${size}px` } as React.CSSProperties}
         >
             <Lottie
                 lottieRef={lottieRef}
                 animationData={animationData}
                 loop={isHovered}
                 autoplay={false}
-                style={{ width: '100%', height: '100%' }}
+                className="w-full h-full"
             />
         </div>
     );
