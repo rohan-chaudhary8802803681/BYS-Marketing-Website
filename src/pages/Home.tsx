@@ -13,6 +13,7 @@ import { useState, useEffect, useRef, Suspense, lazy } from 'react';
 import LogoLoop from '../components/ReactBits/LogoLoop';
 import LazySection from '../components/LazySection';
 import MagicBento from '../components/ReactBits/MagicBento';
+import { useRazorpay } from "react-razorpay";
 
 // Lazy load the heavy 3D Ballpit to prevent main thread blocking during initial render
 const Ballpit = lazy(() => import('../components/ReactBits/Ballpit'));
@@ -21,6 +22,7 @@ export default function Home() {
     const { toggleChatbot } = useBotContext();
     const [isIntakeOpen, setIsIntakeOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
+    const { Razorpay } = useRazorpay();
 
     useEffect(() => {
         const checkMobile = () => {
@@ -152,6 +154,62 @@ export default function Home() {
         { src: 'https://cdn.simpleicons.org/webflow/4353FF', alt: 'Webflow' },
         { src: 'https://cdn.simpleicons.org/supabase/3ECF8E', alt: 'Supabase' },
     ];
+
+    const handlePayment = async (planName: string, amountString: string) => {
+        // Parse the amount string (e.g., ₹15,000) into a number
+        const amountNum = parseInt(amountString.replace(/[^0-9]/g, ''), 10);
+        
+        // If the amount is Custom or invalid, redirect to WhatsApp
+        if (isNaN(amountNum) || amountNum <= 0) {
+            window.open(`https://wa.me/+918383894893?text=Hi%2C%20I'm%20interested%20in%20the%20${encodeURIComponent(planName)}%20plan`, '_blank');
+            return;
+        }
+
+        try {
+            // Call the backend to create an order
+            const res = await fetch('/api/createOrder', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ amount: amountNum * 100 }), // Amount in paise
+            });
+
+            if (!res.ok) throw new Error('Failed to create order on server.');
+            const data = await res.json();
+
+            // Initialize Razorpay checkout options
+            const options = {
+                key: import.meta.env.VITE_RAZORPAY_KEY_ID, // Use Vite env var
+                amount: data.amount,
+                currency: data.currency,
+                name: 'BYS Marketing',
+                description: `${planName} Plan Subscription`,
+                order_id: data.id,
+                handler: function (response: any) {
+                    alert(`Payment successful! Payment ID: ${response.razorpay_payment_id}`);
+                    // WhatsApp notification could be added here later
+                },
+                prefill: {
+                    name: '',
+                    email: '',
+                    contact: '',
+                },
+                theme: {
+                    color: '#6836F4',
+                },
+            };
+
+            const rzp = new Razorpay(options);
+            
+            rzp.on('payment.failed', function (response: any) {
+                alert(`Payment failed. Reason: ${response.error.description}`);
+            });
+            
+            rzp.open();
+        } catch (error) {
+            console.error('Payment initialization error:', error);
+            alert('Could not initiate payment. Please try again or contact support.');
+        }
+    };
 
     return (
         <main className="flex flex-col gap-16 md:gap-24 pt-4 pb-32 mx-auto w-full">
@@ -491,16 +549,14 @@ export default function Home() {
                                         </li>
                                     ))}
                                 </ul>
-                                <a
-                                    href={`https://wa.me/+918383894893?text=Hi%2C%20I'm%20interested%20in%20the%20${encodeURIComponent(plan.name)}%20plan`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                <button
+                                    onClick={() => handlePayment(plan.name, plan.price)}
                                     className={`w-full py-3.5 rounded-xl font-bold text-center transition-all duration-300 block ${plan.highlight
                                         ? 'bg-white text-primary hover:bg-gray-100 shadow-md'
                                         : 'bg-primary text-white hover:bg-primary-dark shadow-lg shadow-purple-200/50 dark:shadow-purple-900/30'}`}
                                 >
                                     {plan.cta}
-                                </a>
+                                </button>
                             </div>
                         </ScrollReveal>
                     ))}
