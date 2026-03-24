@@ -173,7 +173,14 @@ export default function Home() {
                 body: JSON.stringify({ amount: amountNum * 100 }), // Amount in paise
             });
 
-            if (!res.ok) throw new Error('Failed to create order on server.');
+            if (!res.ok) {
+                const errorText = await res.text();
+                console.error('Server error response:', errorText);
+                if (errorText.includes('keys not configured')) {
+                    throw new Error('MISSING_API_KEYS');
+                }
+                throw new Error('Failed to create order on server.');
+            }
             const data = await res.json();
 
             // Initialize Razorpay checkout options
@@ -205,9 +212,13 @@ export default function Home() {
             });
             
             rzp.open();
-        } catch (error) {
+        } catch (error: any) {
             console.error('Payment initialization error:', error);
-            alert('Could not initiate payment. Please try again or contact support.');
+            if (error.message === 'MISSING_API_KEYS') {
+                alert('Vercel Config Error: Please add VITE_RAZORPAY_KEY_ID and RAZORPAY_KEY_SECRET to your Vercel Environment Variables and redeploy.');
+            } else {
+                alert('Could not initiate payment. Please try again or contact support.');
+            }
         }
     };
 
